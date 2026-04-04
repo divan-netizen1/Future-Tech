@@ -19,6 +19,8 @@
   --font-family-base: "Inter", sans-serif;
   --font-family-accent: "Kumbh Sans", sans-serif;
 
+  --gradient: linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%);
+
   --container-width: #{rem(1600)};
   --container-padding-x: #{rem(16)};
 
