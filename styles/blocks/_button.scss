@@ -20,7 +20,7 @@
   @include hover {
     color: var(--color-accent);
     border-color: var(--color-accent);
-    background-color: var(--color-dark-15);
+    background-color: transparent;
   }
 
   &-accent {
