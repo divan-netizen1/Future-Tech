@@ -1,0 +1,10 @@
+@use "../helpers" as *;
+
+.news {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(358), 1fr));
+    gap: rem(30);
+    padding-block: fluid(80, 40);
+  }
+}
