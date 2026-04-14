@@ -11,6 +11,10 @@
     @include laptop {
       border-radius: rem(10);
     }
+
+    &--small {
+      height: fluid(290, 208);
+    }
   }
 
   &__panel {
@@ -24,7 +28,7 @@
     transition-duration: var(--transition-duration);
 
     &:not(.is-active) {
-        @include hide;
+      @include hide;
     }
 
     &::before {
@@ -36,6 +40,11 @@
 
     * {
       position: relative;
+    }
+
+    &--center {
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -67,4 +76,6 @@
       font-size: rem(14);
     }
   }
+
+
 }
