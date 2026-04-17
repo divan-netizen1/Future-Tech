@@ -511,13 +511,13 @@ button[aria-label]::before {
   background-repeat: no-repeat;
 }
 .icon--yellow-arrow::after {
-  background-image: url("../../icons/promo-Icon.svg");
+  background-image: url("../icons/promo-Icon.svg");
 }
 .icon--yellow-eye::after {
-  background-image: url("../../icons/eye-yellow.svg");
+  background-image: url("../icons/eye-yellow.svg");
 }
 .icon--gray-arrow-down::after {
-  background-image: url("../../icons/gray-down-arrow.svg");
+  background-image: url("../icons/gray-down-arrow.svg");
 }
 
 .logo {
@@ -1137,7 +1137,7 @@ button[aria-label]::before {
     width: 100vw;
     margin-left: calc(var(--container-padding-x) * -1);
     padding: 6.25rem 2.5rem 2.5rem;
-    background-image: url("../../images/resources-preview/bg-tablt.png");
+    background-image: url("../images/resources-preview/bg-tablt.png");
     background-size: contain;
   }
 }
