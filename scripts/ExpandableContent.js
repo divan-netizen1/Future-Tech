@@ -5,14 +5,14 @@ const rootSelector = "[data-js-expandable-content]";
 class ExpandableContent {
   selectors = {
     root: rootSelector,
-
     button: "[data-js-expandable-content-button]",
   };
+
   stateClasses = {
     isExpanded: "is-expanded",
   };
 
-  animationsParams = {
+  animationParams = {
     duration: 500,
     easing: "ease",
   };
@@ -27,10 +27,17 @@ class ExpandableContent {
     const { offsetHeight, scrollHeight } = this.rootElement;
 
     this.rootElement.classList.add(this.stateClasses.isExpanded);
-    this.rootElement.animate([
-      { maxHeight: `${pxToRem(offsetHeight)}rem` },
-      { maxHeight: `${pxToRem(scrollHeight)}rem` },
-    ], this.animationsParams);
+    this.rootElement.animate(
+      [
+        {
+          maxHeight: `${pxToRem(offsetHeight)}rem`,
+        },
+        {
+          maxHeight: `${pxToRem(scrollHeight)}rem`,
+        },
+      ],
+      this.animationParams,
+    );
   }
 
   onButtonClick = () => {

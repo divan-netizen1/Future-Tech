@@ -28,6 +28,8 @@
     --container-width: #{rem(1280)};
   }
 
+  --shadow: 0 0 0 #{rem(3)} #191919;
+
   --transition-duration: 0.2s;
 
   --border: #{rem(1)} solid var(--color-dark-15);
